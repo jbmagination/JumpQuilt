@@ -6,14 +6,14 @@ license="MIT"
 # A list of mods - how many allowed here is determined by the individual mod loader
 [[mods]] #mandatory
 # The modid of the mod
-modId="jumpquilt" #mandatory
+modId="jumploader" #mandatory
 # The version number of the mod - there's a few well known ${} variables useable here or just hardcode it
 version="${file.jarVersion}" #mandatory
 # A display name for the mod
-displayName="JumpQuilt" #mandatory
+displayName="Jumploader" #mandatory
 # A text field displayed in the mod UI
-authors="comp500, kb1000" #optional
+authors="comp500, kb1000, JBMagination" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-Allows the use of Quilt mods in Twitch modpacks, by loading Quilt as if it were a Forge mod.
+Starts Fabric in place of Forge.
 '''

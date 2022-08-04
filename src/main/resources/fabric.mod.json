@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 1,
+    "id": "jumploader",
+    "version": "2.1.3",
+ 
+    "name": "Jumploader",
+    "description": "Allows the use of Fabric mods in Twitch modpacks, by loading Fabric as if it were a Forge mod.",
+    "authors": [
+      "comp500",
+      "kb1000",
+      "JBMagination"
+    ],
+    "contact": {
+      "homepage": "https://github.com/jbmagination/Jumploader",
+      "sources": "https://github.com/jbmagination/Jumploader",
+      "issues": "https://github.com/jbmagination/Jumploader/issues"
+    },
+ 
+    "license": "MIT",
+    "icon": "assets/jumploader/icon-128.png",
+ 
+    "environment": "*",
+ 
+    "depends": {
+      "fabricloader": ">=0.7.2"
+    }
+  }

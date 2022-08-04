@@ -48,12 +48,12 @@ public class ConfigFile {
 	@Expose
 	public String overrideMainClass = null;
 	// TODO: Rewrite everything according to https://medium.com/@sdboyer/so-you-want-to-write-a-package-manager-4ae9c17d9527
-	// TODO: - all the metadata can be supplied with modpacks - as long as it's ensured that the files are downloaded from quiltmc/mojang
-	// Use this Quilt loader version if possible, instead of the latest one
+	// TODO: - all the metadata can be supplied with modpacks - as long as it's ensured that the files are downloaded from FabricMC/Mojang
+	// Use this Fabric loader version if possible, instead of the latest one
 	// This should be automatically set on first load to the version that is loaded, if it does not already exist
-	// Then, updating the Quilt loader version in a modpack is an explicit action - and is set by the modpack
+	// Then, updating the Fabric loader version in a modpack is an explicit action - and is set by the modpack
 	@Expose
-	public String pinQuiltLoaderVersion = null;
+	public String pinFabricLoaderVersion = null;
 
 	private ConfigFile(Path destFile) {
 		this.destFile = destFile;

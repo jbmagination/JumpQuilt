@@ -1,11 +1,11 @@
 buildscript {
     repositories {
-        maven { url = 'https://files.minecraftforge.net/maven' }
+        maven { url = 'https://maven.minecraftforge.net' }
         jcenter()
         mavenCentral()
     }
     dependencies {
-        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '3.+', changing: true
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
     }
 }
 apply plugin: 'net.minecraftforge.gradle'
@@ -25,7 +25,7 @@ minecraft {
     // stable_#            Stables are built at the discretion of the MCP team.
     // Use non-default mappings at your own risk. they may not always work.
     // Simply re-run your setup task after changing the mappings to update your workspace.
-    mappings channel: 'snapshot', version: '20190621-1.14.2'
+    mappings channel: 'official', version: '1.19.1'
     // makeObfSourceJar = false // an Srg named sources jar is made by default. uncomment this to disable.
 
     // accessTransformer = file('src/main/resources/META-INF/accesstransformer.cfg')
@@ -117,12 +117,12 @@ jar {
     manifest {
         //noinspection Annotator
         attributes([
-                "Specification-Title": "jumpquilt",
-                "Specification-Vendor": "kb1000",
+                "Specification-Title": "jumploader",
+                "Specification-Vendor": "JBMagination",
                 "Specification-Version": "1", // We are version 1 of ourselves
                 "Implementation-Title": project.name,
                 "Implementation-Version": "${version}",
-                "Implementation-Vendor" :"kb1000",
+                "Implementation-Vendor" :"JBMagination",
                 "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ")
         ])
     }
@@ -135,7 +135,7 @@ compileJava {
 processResources {
     inputs.property "version", project.version
 
-    filesMatching("quilt.mod.json") {
+    filesMatching("fabric.mod.json") {
         expand "version": project.version
     }
 }

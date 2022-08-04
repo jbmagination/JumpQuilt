@@ -10,7 +10,7 @@ import java.net.URL;
 import java.net.URLStreamHandler;
 import java.util.Map;
 
-public class QuiltFilesystemURLHandlerAppender implements PreLaunchDispatcher.Handler {
+public class JimfsURLHandlerAppender implements PreLaunchDispatcher.Handler {
 	private final Logger LOGGER = LogManager.getLogger();
 
 	@Override

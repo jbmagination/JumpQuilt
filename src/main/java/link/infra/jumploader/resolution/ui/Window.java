@@ -31,7 +31,7 @@ public class Window implements Component {
 		// Initialise GLFW
 		GLFWErrorCallback.createPrint(System.err).set();
 		if (!GLFW.glfwInit()) {
-			throw new IllegalStateException("Failed to initialise GLFW for JumpQuilt status");
+			throw new IllegalStateException("Failed to initialise GLFW for Jumploader status");
 		}
 
 		// Configure GLFW
@@ -40,9 +40,9 @@ public class Window implements Component {
 		GLFW.glfwWindowHint(GLFW.GLFW_RESIZABLE, GLFW.GLFW_TRUE);
 
 		// Create the window
-		windowPtr = GLFW.glfwCreateWindow(winWidth, winHeight, "JumpQuilt", MemoryUtil.NULL, MemoryUtil.NULL);
+		windowPtr = GLFW.glfwCreateWindow(winWidth, winHeight, "Jumploader", MemoryUtil.NULL, MemoryUtil.NULL);
 		if (windowPtr == MemoryUtil.NULL) {
-			throw new RuntimeException("Failed to create a window for JumpQuilt status");
+			throw new RuntimeException("Failed to create a window for Jumploader status");
 		}
 
 		try (MemoryStack stack = MemoryStack.stackPush()) {
